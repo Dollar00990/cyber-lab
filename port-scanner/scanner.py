@@ -24,6 +24,7 @@ def scan_port(target, port):
         service = services.get(port, "Unknown")
         open_ports.append(port)
         print(f"\nOpen Ports Found: {len(open_ports)}")
+        print(f"[OPEN] Port {port} ({service})")
 
     sock.close()
 
