@@ -14,4 +14,4 @@ A simple TCP port scanner written in Python.
 - Network Discovery Tool
 - Log Analyzer
 - Web Security Scanner
-- Security Dashb
+- Security Dashboard
