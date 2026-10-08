@@ -1,0 +1,15 @@
+{
+    "target": "127.0.0.1",
+    "resolved_ip": "127.0.0.1",
+    "start_port": 7990,
+    "end_port": 8010,
+    "scan_time": "2026-10-08T09:08:20",
+    "duration_seconds": 0.005,
+    "open_ports": [
+        {
+            "port": 8000,
+            "service": "Python HTTP Server",
+            "status": "open"
+        }
+    ]
+}

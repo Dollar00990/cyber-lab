@@ -1,0 +1,10 @@
+CYBER LAB PORT SCANNER REPORT
+==================================================
+Target: 127.0.0.1
+Resolved IP: 127.0.0.1
+Port range: 7990-8010
+Scan time: 2026-10-08T09:08:20
+Duration: 0.005 seconds
+Open ports found: 1
+==================================================
+Port 8000: OPEN (Python HTTP Server)

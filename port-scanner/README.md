@@ -2,6 +2,12 @@
 
 A simple TCP port scanner written in Python.
 
+## Usage
+
+```bash
+
+python scanner.py 127.0.0.1 7990 8010
+
 ## Features
 
 - Scan a target host
