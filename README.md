@@ -1,144 +1,111 @@
-# Cyber Lab Port Scanner
+# Cyber Lab
 
-A multithreaded TCP port scanner written in Python for learning network programming and authorized security testing.
+My collection of cybersecurity tools, learning projects, and experiments built while studying networking, Python, and security engineering.
 
-## Safety Notice
+## About
 
-Only scan computers and networks that you own or have explicit permission to test.
+This repository serves as my cybersecurity learning laboratory where I build practical tools, explore security concepts, and improve my software development skills through hands-on projects.
 
-This learning version restricts scanning to localhost and private IP addresses.
+## Projects
 
-## Features
+### Port Scanner
 
-- TCP connect scanning
-- Multithreaded scanning
+A Python-based TCP port scanner.
+
+**Features**
+- Scan target hosts
 - Custom port ranges
-- Hostname resolution
-- Common service identification
-- Configurable timeout
-- Configurable worker threads
-- Text report export
-- JSON report export
-- Input and target validation
+- Open port detection
+- Command-line interface
 
-## Requirements
-
-- Python 3.10 or newer
-- No external Python packages required
-
-## Usage
-
-Basic syntax:
-
-```bash
-python scanner.py <target> <start_port> <end_port>
-```
-
-Scan a local port range:
-
-```bash
-python scanner.py 127.0.0.1 7990 8010
-```
-
-Save a text report:
-
-```bash
-python scanner.py 127.0.0.1 7990 8010 --save text
-```
-
-Save a JSON report:
-
-```bash
-python scanner.py 127.0.0.1 7990 8010 --save json
-```
-
-Save both report formats:
-
-```bash
-python scanner.py 127.0.0.1 7990 8010 --save both
-```
-
-Change the timeout:
-
-```bash
-python scanner.py 127.0.0.1 7990 8010 --timeout 1
-```
-
-Change the number of worker threads:
-
-```bash
-python scanner.py 127.0.0.1 7990 8010 --workers 50
-```
-
-Display help:
-
-```bash
-python scanner.py --help
-```
-
-## Testing
-
-Start a temporary local web server:
-
-```bash
-python -m http.server 8000
-```
-
-Open another terminal and scan the port:
-
-```bash
-python scanner.py 127.0.0.1 7990 8010
-```
-
-Example output:
-
-```text
-==================================================
-CYBER LAB PORT SCANNER v1.0
-==================================================
-Target       : 127.0.0.1
-Resolved IP  : 127.0.0.1
-Port range   : 7990-8010
-Threads      : 100
-Timeout      : 0.5 seconds
-==================================================
-[OPEN] 8000  Python HTTP Server
-==================================================
-Open ports found : 1
-Scan duration    : 0.021 seconds
-==================================================
-```
-
-## Project Structure
+**Location**
 
 ```text
 port-scanner/
-├── README.md
-├── scanner.py
-└── requirements.txt
 ```
 
-Generated scan reports are excluded from GitHub because they may contain network information.
+---
 
-## Current Limitations
+### Website Vulnerability Scanner
 
-- Supports TCP connect scanning only
-- Supports IPv4 only
-- Scans localhost and private IP addresses only
-- Service names are based on a small built-in mapping
-- Does not determine software versions
-- Does not determine whether a firewall filtered a port
+A website security assessment tool for authorized testing.
 
-## Planned Improvements
+**Features**
+- Security header analysis
+- HTTPS checks
+- Cookie security checks
+- Website crawling
+- Form discovery
+- JSON reports
+- HTML reports
 
-- Web API using FastAPI
-- Browser-based dashboard
-- Scan history
-- Authentication
-- Configurable target allowlist
-- Container deployment
-- Authorized private-cloud scanning
+**Location**
+
+```text
+website-vulnerability-scanner/
+```
+
+---
+
+## Skills Being Developed
+
+- Python Programming
+- Networking Fundamentals
+- TCP/IP
+- Web Security
+- Secure Coding
+- Automation
+- Security Assessment
+- Git & GitHub
+
+## Technology Stack
+
+- Python
+- Requests
+- BeautifulSoup4
+- HTML
+- Git
+- GitHub
+
+## Repository Structure
+
+```text
+cyber-lab/
+│
+├── port-scanner/
+│   └── README.md
+│
+├── website-vulnerability-scanner/
+│   └── README.md
+│
+└── README.md
+```
+
+## Future Projects
+
+- Password Strength Checker
+- Log Analyzer
+- File Integrity Monitor
+- Hash Generator & Verifier
+- Security Dashboard (FastAPI)
+- Network Discovery Tool
+- Threat Intelligence Dashboard
+
+## Goals
+
+My goal is to build a portfolio of cybersecurity projects while improving my skills in:
+
+- Cybersecurity
+- Software Development
+- Network Engineering
+- Security Automation
 
 ## Author
 
-Lebakae Amose Adorols
+**Lebakae Amose Adoro**
+
+Cybersecurity enthusiast and Computer Systems Engineering graduate focused on building practical security tools and learning through real-world projects.
+
+---
+
+⚠️ These projects are intended for educational purposes and authorized security testing only.
